@@ -354,6 +354,7 @@ Public Class NewStockVariable
         End If
     End Sub
 
+    'SIZE OR COLOUR SELECTOR BUTTONS
     Private Sub btnSize_Click(sender As Object, e As EventArgs) Handles btnSize.Click
         Dim newSelector As Selector = New Selector()
         newSelector.txtSelectType.Text = cbSize.Text
