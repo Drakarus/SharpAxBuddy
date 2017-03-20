@@ -30,6 +30,7 @@ Public Class ColourAttributeSet
             MessageBox.Show(ex.Message)
         Finally
             connectionsql.Dispose()
+
         End Try
 
     End Sub
