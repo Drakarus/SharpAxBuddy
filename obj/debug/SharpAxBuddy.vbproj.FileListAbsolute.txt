@@ -1,0 +1,50 @@
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe.config
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\bin\Debug\SharpAxBuddy.pdb
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\bin\Debug\SharpAxBuddy.xml
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.MainForm.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form2.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form3.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.LoginForm.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.Resources.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.NewStockVariable.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.Products.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.SizeAttributeSet.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.vbproj.GenerateResource.Cache
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.exe
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.xml
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\SharpAxBuddy\SharpAxBuddy\obj\Debug\SharpAxBuddy.pdb
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe.config
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.exe
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.xml
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.pdb
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\bin\Debug\SharpAxBuddy.pdb
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\bin\Debug\SharpAxBuddy.xml
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.MainForm.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form2.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form3.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.LoginForm.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Resources.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.NewStockVariable.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Products.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.SizeAttributeSet.resources
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.vbproj.GenerateResource.Cache
+C:\Users\Dan\Documents\SB2\SharpAxBuddy\obj\Debug\SharpAxBuddy.ColourAttributeSet.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe.config
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.exe
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.xml
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.pdb
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\bin\Debug\SharpAxBuddy.pdb
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\bin\Debug\SharpAxBuddy.xml
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.ColourAttributeSet.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.MainForm.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form2.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form3.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.LoginForm.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Resources.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.NewStockVariable.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Products.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.SizeAttributeSet.resources
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.vbproj.GenerateResource.Cache
