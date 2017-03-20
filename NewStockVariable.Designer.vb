@@ -58,6 +58,7 @@ Partial Class NewStockVariable
         Me.btnLoadType = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.btnColour = New System.Windows.Forms.Button()
         Me.btnSize = New System.Windows.Forms.Button()
@@ -141,7 +142,6 @@ Partial Class NewStockVariable
         Me.dgvComponents = New System.Windows.Forms.DataGridView()
         Me.TabPage13 = New System.Windows.Forms.TabPage()
         Me.dgvDiscount = New System.Windows.Forms.DataGridView()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -522,6 +522,13 @@ Partial Class NewStockVariable
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Clothing"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(452, 143)
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.MaskedTextBox1.TabIndex = 41
         '
         'TextBox5
         '
@@ -927,7 +934,7 @@ Partial Class NewStockVariable
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1017, 254)
+        Me.TabPage3.Size = New System.Drawing.Size(1321, 254)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "StockedEquipment"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -937,7 +944,7 @@ Partial Class NewStockVariable
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1017, 254)
+        Me.TabPage4.Size = New System.Drawing.Size(1321, 254)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Packs"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -1308,13 +1315,6 @@ Partial Class NewStockVariable
         Me.dgvDiscount.Name = "dgvDiscount"
         Me.dgvDiscount.Size = New System.Drawing.Size(1005, 541)
         Me.dgvDiscount.TabIndex = 0
-        '
-        'MaskedTextBox1
-        '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(452, 143)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.MaskedTextBox1.TabIndex = 41
         '
         'NewStockVariable
         '

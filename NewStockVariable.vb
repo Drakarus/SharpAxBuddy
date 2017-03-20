@@ -5,8 +5,30 @@ Imports System.Data.ConnectionState
 Imports System.Data.SqlClient.SqlDataReader
 
 Public Class NewStockVariable
+
+    'SQL Connection
     Dim connectionsql As New SqlConnection
     Dim command As New SqlCommand
+
+    'Public Property selector() As String
+    '    Get
+    '        Return _selector
+    '    End Get
+    '    Set(ByVal value As Selector
+    '        )
+    '        _selector = value
+    '    End Set
+    'End Property
+    Private Shared m_Selector As Selector
+    Public Shared Property Selector() As Selector
+        Get
+            Return m_Selector
+        End Get
+        Set(ByVal Value As Selector)
+            m_Selector = Value
+        End Set
+    End Property
+
 
     Private Sub NewStockVariable_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -330,5 +352,17 @@ Public Class NewStockVariable
         If TryCast(parent, TextBox) IsNot Nothing Then
             TryCast(parent, TextBox).Text = [String].Empty
         End If
+    End Sub
+
+    Private Sub btnSize_Click(sender As Object, e As EventArgs) Handles btnSize.Click
+        Dim newSelector As Selector = New Selector()
+        newSelector.txtSelectType.Text = cbSize.Text
+        newSelector.Show()
+    End Sub
+
+    Private Sub btnColour_Click(sender As Object, e As EventArgs) Handles btnColour.Click
+        Dim newSelector As Selector = New Selector()
+        newSelector.txtSelectType.Text = cbColour.Text
+        newSelector.Show()
     End Sub
 End Class

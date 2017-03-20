@@ -48,3 +48,4 @@ C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\S
 C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Products.resources
 C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.SizeAttributeSet.resources
 C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.vbproj.GenerateResource.Cache
+C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Selector.resources
