@@ -10,6 +10,13 @@ Public Class NewStockVariable
     Dim connectionsql As New SqlConnection
     Dim command As New SqlCommand
 
+
+    'http://www.informit.com/articles/article.aspx?p=102148&seqNum=7
+    'Passing information between two forms
+
+
+    'Value to pass to Size and Colour selectors
+
     'Public Property selector() As String
     '    Get
     '        Return _selector
@@ -19,15 +26,28 @@ Public Class NewStockVariable
     '        _selector = value
     '    End Set
     'End Property
-    Private Shared m_Selector As Selector
-    Public Shared Property Selector() As Selector
-        Get
-            Return m_Selector
-        End Get
-        Set(ByVal Value As Selector)
-            m_Selector = Value
-        End Set
-    End Property
+
+    'Private Shared m_Selector As Selector
+    'Public Shared Property Selector() As Selector
+    '    Get
+    '        Return m_Selector
+    '    End Get
+    '    Set(ByVal Value As Selector)
+    '        m_Selector = Value
+    '    End Set
+    'End Property
+    Public Class choose
+        Dim m_selector As Integer
+        Public Property chooser() As Integer
+            Get
+                Return m_selector
+            End Get
+            Set(ByVal Value As Integer)
+                m_selector = Value
+            End Set
+        End Property
+    End Class
+
 
 
     Private Sub NewStockVariable_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -357,7 +377,13 @@ Public Class NewStockVariable
     'SIZE OR COLOUR SELECTOR BUTTONS
     Private Sub btnSize_Click(sender As Object, e As EventArgs) Handles btnSize.Click
         Dim newSelector As Selector = New Selector()
+        'Dim selector As Integer
+        'Dim newSelect As New Selector
+        Dim sel As New choose
+        Dim Chooser As Integer = '1'
+        sel.chooser = Chooser
         newSelector.txtSelectType.Text = cbSize.Text
+        newSelector.myCaller = Me
         newSelector.Show()
     End Sub
 

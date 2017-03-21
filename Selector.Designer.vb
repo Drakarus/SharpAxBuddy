@@ -108,14 +108,14 @@ Partial Class Selector
         Me.dgvSelected.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSelected.Location = New System.Drawing.Point(585, 38)
         Me.dgvSelected.Name = "dgvSelected"
-        Me.dgvSelected.Size = New System.Drawing.Size(240, 432)
+        Me.dgvSelected.Size = New System.Drawing.Size(387, 432)
         Me.dgvSelected.TabIndex = 8
         '
         'Selector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(837, 570)
+        Me.ClientSize = New System.Drawing.Size(984, 570)
         Me.Controls.Add(Me.dgvSelected)
         Me.Controls.Add(Me.dgvFullList)
         Me.Controls.Add(Me.txtSelectType)

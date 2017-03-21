@@ -7,6 +7,9 @@ Imports System.Linq
 
 Public Class Selector
 
+    'Retrieve value from  NewStockVariable
+    Public myCaller As NewStockVariable
+
     Dim connectionsql As New SqlConnection
     Dim command As New SqlCommand
     Dim datareader As SqlDataReader
@@ -97,6 +100,7 @@ Public Class Selector
         dt.Columns.Add("ID", GetType(Integer))
         dt.Columns.Add("Code", GetType(String))
         dt.Columns.Add("Description", GetType(String))
+        dgvSelected.Columns(0).Visible = False
 
         For Each dr In Me.dgvFullList.SelectedRows
             'dgvSelected.Columns.Add("ID", GetType(Integer))
