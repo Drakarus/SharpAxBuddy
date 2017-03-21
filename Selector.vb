@@ -115,6 +115,5 @@ Public Class Selector
         ' Next
         'bind.DataSource = dt
         'dgvSelected.DataSource = bind
-
     End Sub
 End Class
