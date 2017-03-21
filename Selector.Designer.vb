@@ -31,6 +31,7 @@ Partial Class Selector
         Me.txtSelectType = New System.Windows.Forms.TextBox()
         Me.dgvFullList = New System.Windows.Forms.DataGridView()
         Me.dgvSelected = New System.Windows.Forms.DataGridView()
+        Me.txtSelect = New System.Windows.Forms.TextBox()
         CType(Me.dgvFullList, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvSelected, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -111,11 +112,19 @@ Partial Class Selector
         Me.dgvSelected.Size = New System.Drawing.Size(387, 432)
         Me.dgvSelected.TabIndex = 8
         '
+        'txtSelect
+        '
+        Me.txtSelect.Location = New System.Drawing.Point(246, 12)
+        Me.txtSelect.Name = "txtSelect"
+        Me.txtSelect.Size = New System.Drawing.Size(100, 20)
+        Me.txtSelect.TabIndex = 9
+        '
         'Selector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 570)
+        Me.Controls.Add(Me.txtSelect)
         Me.Controls.Add(Me.dgvSelected)
         Me.Controls.Add(Me.dgvFullList)
         Me.Controls.Add(Me.txtSelectType)
@@ -142,4 +151,5 @@ Partial Class Selector
     Friend WithEvents txtSelectType As System.Windows.Forms.TextBox
     Friend WithEvents dgvFullList As System.Windows.Forms.DataGridView
     Friend WithEvents dgvSelected As System.Windows.Forms.DataGridView
+    Friend WithEvents txtSelect As System.Windows.Forms.TextBox
 End Class

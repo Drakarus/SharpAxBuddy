@@ -380,7 +380,7 @@ Public Class NewStockVariable
         'Dim selector As Integer
         'Dim newSelect As New Selector
         Dim sel As New choose
-        Dim Chooser As Integer = '1'
+        Dim Chooser As Integer = 1
         sel.chooser = Chooser
         newSelector.txtSelectType.Text = cbSize.Text
         newSelector.myCaller = Me

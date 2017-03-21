@@ -19,7 +19,7 @@ Public Class Selector
         'selectName = txtSelectType.Text
         'MessageBox.Show(selectName)
         'Dim i = dgvFullList.CurrentRow.Cells(0).Value
-
+        'txtSelect.Text = Choose()
 
 
         'Initialise dgvSelect
@@ -64,6 +64,47 @@ Public Class Selector
     End Sub
 
     Private Sub btnMoveRight_Click(sender As Object, e As EventArgs) Handles btnMoveRight.Click
+        'https://www.youtube.com/watch?v=smyojy0v_1U
+        'How to to display datagridview checked row to another datagridview [withcode]
+
+        'SQLCODE
+        'ALTER TABLE AttributeSize ADD
+        'SizeSequence int NOT NULL CONSTRAINT DF_SizeSequence_AttributeSize DEFAULT '1'
+        'ALTER TABLE AttributeSize
+        'DROP CONSTRAINT DF_SizeSequence_AttributeSize 
+
+        'Update(AttributeSize)
+        'SET SizeSequence = '7'
+        'WHERE SizeID = '7'
+
+
+
+
+        Dim dr As New DataGridViewRow
+        Dim dt As New DataTable
+        Dim bind As New BindingSource
+
+        dt.Columns.Add("ID", GetType(Integer))
+        dt.Columns.Add("Code", GetType(String))
+        dt.Columns.Add("Description", GetType(String))
+        dgvSelected.Columns(0).Visible = False
+
+        Dim row As DataGridViewRow = dgvSelected.Rows(Of Integer)()
+
+        If dgvSelected.Rows.Count() > 0 Then
+            For j As Integer = 0 To dgvSelected.Rows.Count() - 1 + 1
+                If 
+            Next
+
+            For Each dr In Me.dgvFullList.SelectedRows
+                dgvSelected.Rows.Add(dr.Cells("SizeID").Value, dr.Cells(2).Value, dr.Cells(3).Value)
+            Next
+
+
+        End If
+
+
+
         'Dim currentMouseRow As New Integer
         'currentMouseRow = dgvFullList.SelectedRows
         ''Dim id, i As Integer
@@ -80,9 +121,9 @@ Public Class Selector
         ''MsgBox(sResult)
         'Dim id As Integer
         'Dim idList As List(Of String)
-        Dim dr As New DataGridViewRow
-        Dim dt As New DataTable
-        Dim bind As New BindingSource
+        'Dim dr As New DataGridViewRow
+        'Dim dt As New DataTable
+        'Dim bind As New BindingSource
         'For Each row As DataGridViewRow In dgvFullList.SelectedRows
         'idList.Add(selectedItem.Cells.ToString())
         'idList.Add(dgvFullList.SelectedRows(0).Cells(0).Value)
@@ -97,25 +138,25 @@ Public Class Selector
 
         '    Next scheduleCell
         'Next cell
-        dt.Columns.Add("ID", GetType(Integer))
-        dt.Columns.Add("Code", GetType(String))
-        dt.Columns.Add("Description", GetType(String))
-        dgvSelected.Columns(0).Visible = False
+        'dt.Columns.Add("ID", GetType(Integer))
+        'dt.Columns.Add("Code", GetType(String))
+        'dt.Columns.Add("Description", GetType(String))
+        'dgvSelected.Columns(0).Visible = False
 
-        For Each dr In Me.dgvFullList.SelectedRows
-            'dgvSelected.Columns.Add("ID", GetType(Integer))
-            'dgvSelected.Columns.Add("Code", GetType(String))
-            'dgvSelected.Columns.Add("Description", GetType(String))
-            'dgvSelected.Columns.Add("test", "1")
-            'dgvSelected.Columns.Add("code", "2")
-            'dgvSelected.Columns.Add("Description", "3")
-            dgvSelected.Rows.Add(dr.Cells("SizeID").Value, dr.Cells(2).Value, dr.Cells(3).Value)
-            'dt.Rows.Add(dr.Cells(0).Value, dr.Cells(1).Value, dr.Cells(2).Value)
+        'For Each dr In Me.dgvFullList.SelectedRows
+        'dgvSelected.Columns.Add("ID", GetType(Integer))
+        'dgvSelected.Columns.Add("Code", GetType(String))
+        'dgvSelected.Columns.Add("Description", GetType(String))
+        'dgvSelected.Columns.Add("test", "1")
+        'dgvSelected.Columns.Add("code", "2")
+        'dgvSelected.Columns.Add("Description", "3")
+        'dgvSelected.Rows.Add(dr.Cells("SizeID").Value, dr.Cells(2).Value, dr.Cells(3).Value)
+        'dt.Rows.Add(dr.Cells(0).Value, dr.Cells(1).Value, dr.Cells(2).Value)
 
-            'bind.DataSource = dt
-            ''dgvFullList.DataSource = bSource
-            'dgvSelected.DataSource = bind
-        Next
+        'bind.DataSource = dt
+        ''dgvFullList.DataSource = bSource
+        'dgvSelected.DataSource = bind
+        'Next
         ' Next
         'bind.DataSource = dt
         'dgvSelected.DataSource = bind
