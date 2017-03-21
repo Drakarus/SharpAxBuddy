@@ -30,7 +30,9 @@ Partial Class Selector
         Me.btnReset = New System.Windows.Forms.Button()
         Me.txtSelectType = New System.Windows.Forms.TextBox()
         Me.dgvFullList = New System.Windows.Forms.DataGridView()
+        Me.dgvSelected = New System.Windows.Forms.DataGridView()
         CType(Me.dgvFullList, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvSelected, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'listFullList
@@ -52,7 +54,7 @@ Partial Class Selector
         '
         'btnSelect
         '
-        Me.btnSelect.Location = New System.Drawing.Point(664, 477)
+        Me.btnSelect.Location = New System.Drawing.Point(676, 493)
         Me.btnSelect.Name = "btnSelect"
         Me.btnSelect.Size = New System.Drawing.Size(75, 54)
         Me.btnSelect.TabIndex = 2
@@ -62,9 +64,9 @@ Partial Class Selector
         'listSelected
         '
         Me.listSelected.FormattingEnabled = True
-        Me.listSelected.Location = New System.Drawing.Point(582, 38)
+        Me.listSelected.Location = New System.Drawing.Point(237, 476)
         Me.listSelected.Name = "listSelected"
-        Me.listSelected.Size = New System.Drawing.Size(243, 433)
+        Me.listSelected.Size = New System.Drawing.Size(243, 82)
         Me.listSelected.TabIndex = 3
         '
         'btnMoveLeft
@@ -101,11 +103,20 @@ Partial Class Selector
         Me.dgvFullList.Size = New System.Drawing.Size(483, 432)
         Me.dgvFullList.TabIndex = 7
         '
+        'dgvSelected
+        '
+        Me.dgvSelected.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSelected.Location = New System.Drawing.Point(585, 38)
+        Me.dgvSelected.Name = "dgvSelected"
+        Me.dgvSelected.Size = New System.Drawing.Size(240, 432)
+        Me.dgvSelected.TabIndex = 8
+        '
         'Selector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(837, 570)
+        Me.Controls.Add(Me.dgvSelected)
         Me.Controls.Add(Me.dgvFullList)
         Me.Controls.Add(Me.txtSelectType)
         Me.Controls.Add(Me.btnReset)
@@ -117,6 +128,7 @@ Partial Class Selector
         Me.Name = "Selector"
         Me.Text = "Selector"
         CType(Me.dgvFullList, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvSelected, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -129,4 +141,5 @@ Partial Class Selector
     Friend WithEvents btnReset As System.Windows.Forms.Button
     Friend WithEvents txtSelectType As System.Windows.Forms.TextBox
     Friend WithEvents dgvFullList As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvSelected As System.Windows.Forms.DataGridView
 End Class
