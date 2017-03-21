@@ -89,12 +89,12 @@ Public Class Selector
         dt.Columns.Add("Description", GetType(String))
         dgvSelected.Columns(0).Visible = False
 
-        Dim row As DataGridViewRow = dgvSelected.Rows(Of Integer)()
+        'Dim row As DataGridViewRow = dgvSelected.Rows(Of Integer)()
 
         If dgvSelected.Rows.Count() > 0 Then
-            For j As Integer = 0 To dgvSelected.Rows.Count() - 1 + 1
-                If 
-            Next
+            'For j As Integer = 0 To dgvSelected.Rows.Count() - 1 + 1
+            '    If 
+            'Next
 
             For Each dr In Me.dgvFullList.SelectedRows
                 dgvSelected.Rows.Add(dr.Cells("SizeID").Value, dr.Cells(2).Value, dr.Cells(3).Value)
