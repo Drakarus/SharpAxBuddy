@@ -112,6 +112,8 @@ Public Class NewStockVariable
     'Clothing section generation
     Private Sub btnGenerate_Click(sender As Object, e As EventArgs) Handles btnGenerate.Click
 
+
+        'GENERATE DATA INTO STOCK ITEM DATGRIDVIEW
         Dim stockGrade = cbStockGrade.Text
         Dim stockCat = cbCategory.Text
         Dim supplySite = cbSupplySite.Text
@@ -199,8 +201,6 @@ Public Class NewStockVariable
         description = txtDescription.Text
 
 
-
-
         'Dim tableSize As New ArrayList()
         'For i = 0 To tableColour.Count
         '    tableSize.Add(tableColour.
@@ -240,6 +240,10 @@ Public Class NewStockVariable
         dataGridView1.DataSource = ds.Tables("TeamData").DefaultView
         dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
+        'GENERATE DATA FOR UNIT OF MEASURE
+
+        Dim listCost = txtListCost.Text
+        Dim listPrice = txtListPrice.Text
 
 
 

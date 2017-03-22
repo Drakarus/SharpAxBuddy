@@ -142,6 +142,8 @@ Partial Class NewStockVariable
         Me.dgvComponents = New System.Windows.Forms.DataGridView()
         Me.TabPage13 = New System.Windows.Forms.TabPage()
         Me.dgvDiscount = New System.Windows.Forms.DataGridView()
+        Me.txtListPrice = New System.Windows.Forms.TextBox()
+        Me.Label38 = New System.Windows.Forms.Label()
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -480,6 +482,8 @@ Partial Class NewStockVariable
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Label38)
+        Me.TabPage1.Controls.Add(Me.txtListPrice)
         Me.TabPage1.Controls.Add(Me.MaskedTextBox1)
         Me.TabPage1.Controls.Add(Me.TextBox5)
         Me.TabPage1.Controls.Add(Me.btnColour)
@@ -1316,6 +1320,22 @@ Partial Class NewStockVariable
         Me.dgvDiscount.Size = New System.Drawing.Size(1005, 541)
         Me.dgvDiscount.TabIndex = 0
         '
+        'txtListPrice
+        '
+        Me.txtListPrice.Location = New System.Drawing.Point(755, 110)
+        Me.txtListPrice.Name = "txtListPrice"
+        Me.txtListPrice.Size = New System.Drawing.Size(100, 20)
+        Me.txtListPrice.TabIndex = 42
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Location = New System.Drawing.Point(702, 113)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(50, 13)
+        Me.Label38.TabIndex = 43
+        Me.Label38.Text = "List Price"
+        '
         'NewStockVariable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1493,4 +1513,6 @@ Partial Class NewStockVariable
     Friend WithEvents Label37 As System.Windows.Forms.Label
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents MaskedTextBox1 As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents txtListPrice As System.Windows.Forms.TextBox
 End Class
