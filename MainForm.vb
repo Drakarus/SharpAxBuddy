@@ -85,6 +85,9 @@ Public Class MainForm
     End Sub
 
 
+    Private Sub lblStage2_Click(sender As System.Object, e As System.EventArgs) Handles lblStage2.Click
+
+    End Sub
 End Class
 
 Public Class Customer

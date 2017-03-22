@@ -30,8 +30,8 @@ Partial Class MainForm
         Me.tlsplblLoadProducts = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
+        Me.lblStage2 = New System.Windows.Forms.ToolStripLabel()
         Me.tabForms = New System.Windows.Forms.TabControl()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,7 +53,7 @@ Partial Class MainForm
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblNewStockVariable, Me.ToolStripLabel2, Me.tlsplblLoadProducts, Me.ToolStripLabel4, Me.ToolStripLabel3, Me.ToolStripLabel1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblNewStockVariable, Me.ToolStripLabel2, Me.tlsplblLoadProducts, Me.ToolStripLabel4, Me.ToolStripLabel3, Me.lblStage2})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(877, 25)
@@ -90,6 +90,12 @@ Partial Class MainForm
         Me.ToolStripLabel3.Size = New System.Drawing.Size(108, 22)
         Me.ToolStripLabel3.Text = "Product Code Sync"
         '
+        'lblStage2
+        '
+        Me.lblStage2.Name = "lblStage2"
+        Me.lblStage2.Size = New System.Drawing.Size(42, 22)
+        Me.lblStage2.Text = "Stage2"
+        '
         'tabForms
         '
         Me.tabForms.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -101,12 +107,6 @@ Partial Class MainForm
         Me.tabForms.Size = New System.Drawing.Size(877, 571)
         Me.tabForms.TabIndex = 3
         Me.tabForms.Visible = False
-        '
-        'ToolStripLabel1
-        '
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(42, 22)
-        Me.ToolStripLabel1.Text = "Stage2"
         '
         'MainForm
         '
@@ -137,6 +137,6 @@ Partial Class MainForm
     Friend WithEvents ToolStripLabel4 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents ToolStripLabel3 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents tabForms As System.Windows.Forms.TabControl
-    Friend WithEvents ToolStripLabel1 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents lblStage2 As System.Windows.Forms.ToolStripLabel
 
 End Class
