@@ -128,8 +128,9 @@ Public Class NewStockVariable
 
         Dim SizeCode As New List(Of String)
         Dim SizeDesc As New List(Of String)
-        Dim constr = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
-        'Dim constr = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
+        'SQL
+        'Dim constr = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
+        Dim constr = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
         '-CONNECTION TO SQL--
         Using connection As New SqlConnection(constr)
             connection.Open()
@@ -247,6 +248,7 @@ Public Class NewStockVariable
     Private Sub btnSizeSet_Click(sender As Object, e As EventArgs) Handles btnSizeSet.Click
         Dim SizeForm As New SizeAttributeSet
         SizeForm.Show()
+
     End Sub
 
     Private Sub btnColourSet_Click(sender As Object, e As EventArgs) Handles btnColourSet.Click
@@ -259,8 +261,8 @@ Public Class NewStockVariable
         Dim command As New SqlCommand
         Dim datareader As SqlDataReader
         '-CONNECTION TO SQL--
-        connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
-        'connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
+        'connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
+        connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
         Try
             connectionsql.Open()
             command.Connection = connectionsql
@@ -376,20 +378,32 @@ Public Class NewStockVariable
 
     'SIZE OR COLOUR SELECTOR BUTTONS
     Private Sub btnSize_Click(sender As Object, e As EventArgs) Handles btnSize.Click
-        Dim newSelector As Selector = New Selector()
-        'Dim selector As Integer
-        'Dim newSelect As New Selector
-        Dim sel As New choose
-        Dim Chooser As Integer = 1
-        sel.chooser = Chooser
-        newSelector.txtSelectType.Text = cbSize.Text
-        newSelector.myCaller = Me
-        newSelector.Show()
+        If cbSize.Text = "" Then
+            MessageBox.Show("Please select a size from the dropdown")
+        Else
+            Dim newSelector As Selector = New Selector()
+            'Dim selector As Integer
+            'Dim newSelect As New Selector
+            Dim sel As New choose
+            Dim Chooser As Integer = 1
+            sel.chooser = Chooser
+            newSelector.txtSelectType.Text = cbSize.Text
+            newSelector.txtSelect.Text = 1
+            newSelector.myCaller = Me
+            newSelector.Show()
+        End If
     End Sub
 
     Private Sub btnColour_Click(sender As Object, e As EventArgs) Handles btnColour.Click
-        Dim newSelector As Selector = New Selector()
-        newSelector.txtSelectType.Text = cbColour.Text
-        newSelector.Show()
+        If cbColour.Text = "" Then
+            MessageBox.Show("Please select a colour from the dropdown")
+        Else
+            Dim newSelector As Selector = New Selector()
+            newSelector.txtSelectType.Text = cbColour.Text
+            newSelector.txtSelect.Text = 2
+            newSelector.Show()
+        End If
+
+
     End Sub
 End Class

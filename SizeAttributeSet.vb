@@ -8,8 +8,8 @@ Public Class SizeAttributeSet
     Private Sub SizeAttributeSet_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connectionsql = New SqlConnection
         '-CONNECTION TO SQL--
-        connectionsql.ConnectionString = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
-        'connectionsql.ConnectionString = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
+        'connectionsql.ConnectionString = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
+        connectionsql.ConnectionString = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
         Dim SDA As New SqlDataAdapter
         Dim dbDataSet As New DataTable
         Dim bSource As New BindingSource
@@ -72,8 +72,8 @@ Public Class SizeAttributeSet
 
         connectionsql = New SqlConnection
         '-CONNECTION TO SQL--
-        connectionsql.ConnectionString = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
-        'connectionsql.ConnectionString = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
+        'connectionsql.ConnectionString = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
+        connectionsql.ConnectionString = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
         Dim SDA As New SqlDataAdapter
         Dim dbDataSet As New DataTable
         Dim bSource As New BindingSource

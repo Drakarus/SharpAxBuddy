@@ -15,50 +15,84 @@ Public Class Selector
     Dim datareader As SqlDataReader
 
     Private Sub Selector_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim selectName As String
-        'selectName = txtSelectType.Text
-        'MessageBox.Show(selectName)
-        'Dim i = dgvFullList.CurrentRow.Cells(0).Value
-        'txtSelect.Text = Choose()
 
-
-        'Initialise dgvSelect
         dgvSelected.Columns.Add("test", "ID")
         dgvSelected.Columns.Add("code", "Code")
         dgvSelected.Columns.Add("Description", "Description")
 
+        If txtSelect.Text = 1 Then
 
-        Dim i = txtSelectType.Text
+            Dim i = txtSelectType.Text
+            'SQL
+            'connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
+            connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
+            Dim SDA As New SqlDataAdapter
+            Dim dbDataSet As New DataTable
+            Dim bSource As New BindingSource
+            Try
+                connectionsql.Open()
+                'Dim query As String
 
-        connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
-        Dim SDA As New SqlDataAdapter
-        Dim dbDataSet As New DataTable
-        Dim bSource As New BindingSource
-        Try
-            connectionsql.Open()
-            'Dim query As String
+                'command = New SqlCommand("SELECT * FROM AttributeSize AS AttribSize LEFT JOIN Attributes AS Attrib ON AttribSize.AttributeID = Attrib.AttributeID WHERE Attrib.AttributeName = @Value", connectionsql)
+                command = New SqlCommand("SELECT AttribSize.AttributeID, AttribSize.SizeID, AttribSize.SizeCode, AttribSize.SizeDescription  FROM AttributeSize AS AttribSize LEFT JOIN Attributes AS Attrib ON AttribSize.AttributeID = Attrib.AttributeID WHERE Attrib.AttributeName = @Value", connectionsql)
+                command.Parameters.AddWithValue("@Value", i)
+                SDA.SelectCommand = command
 
-            'command = New SqlCommand("SELECT * FROM AttributeSize AS AttribSize LEFT JOIN Attributes AS Attrib ON AttribSize.AttributeID = Attrib.AttributeID WHERE Attrib.AttributeName = @Value", connectionsql)
-            command = New SqlCommand("SELECT AttribSize.AttributeID, AttribSize.SizeID, AttribSize.SizeCode, AttribSize.SizeDescription  FROM AttributeSize AS AttribSize LEFT JOIN Attributes AS Attrib ON AttribSize.AttributeID = Attrib.AttributeID WHERE Attrib.AttributeName = @Value", connectionsql)
-            command.Parameters.AddWithValue("@Value", i)
-            SDA.SelectCommand = command
+                'query = "select AttributeID, AttributeName from Attributes where AttributeType = '1' "
+                'command = New SqlCommand(query, connectionsql)
+                'SDA.SelectCommand = command
 
-            'query = "select AttributeID, AttributeName from Attributes where AttributeType = '1' "
-            'command = New SqlCommand(query, connectionsql)
-            'SDA.SelectCommand = command
+                SDA.Fill(dbDataSet)
+                bSource.DataSource = dbDataSet
+                dgvFullList.DataSource = bSource
+                SDA.Update(dbDataSet)
+                dgvFullList.Columns(0).Visible = False
+                dgvFullList.Columns(1).Visible = False
+                connectionsql.Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            Finally
+                connectionsql.Dispose()
+            End Try
 
-            SDA.Fill(dbDataSet)
-            bSource.DataSource = dbDataSet
-            dgvFullList.DataSource = bSource
-            SDA.Update(dbDataSet)
-            dgvFullList.Columns(0).Visible = False
-            dgvFullList.Columns(1).Visible = False
-            connectionsql.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        Finally
-            connectionsql.Dispose()
-        End Try
+        ElseIf txtSelect.Text = 2 Then
+            Dim i = txtSelectType.Text
+            'SQL
+            'connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
+            connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
+            Dim SDA As New SqlDataAdapter
+            Dim dbDataSet As New DataTable
+            Dim bSource As New BindingSource
+            Try
+                connectionsql.Open()
+                'Dim query As String
+
+                'command = New SqlCommand("SELECT * FROM AttributeSize AS AttribSize LEFT JOIN Attributes AS Attrib ON AttribSize.AttributeID = Attrib.AttributeID WHERE Attrib.AttributeName = @Value", connectionsql)
+                command = New SqlCommand("SELECT AttribCol.AttributeID, AttribCol.ColourID, AttribCol.ColourCode, AttribCol.ColourDescription  FROM AttributeColour AS AttribCol LEFT JOIN Attributes AS Attrib ON AttribCol.AttributeID = Attrib.AttributeID WHERE Attrib.AttributeName = @Value", connectionsql)
+                command.Parameters.AddWithValue("@Value", i)
+                SDA.SelectCommand = command
+
+                'query = "select AttributeID, AttributeName from Attributes where AttributeType = '1' "
+                'command = New SqlCommand(query, connectionsql)
+                'SDA.SelectCommand = command
+
+                SDA.Fill(dbDataSet)
+                bSource.DataSource = dbDataSet
+                dgvFullList.DataSource = bSource
+                SDA.Update(dbDataSet)
+                dgvFullList.Columns(0).Visible = False
+                dgvFullList.Columns(1).Visible = False
+                connectionsql.Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            Finally
+                connectionsql.Dispose()
+            End Try
+        Else
+            MessageBox.Show("Please select colour or size from dropdown")
+        End If
+
+
 
 
     End Sub
@@ -67,7 +101,7 @@ Public Class Selector
         'https://www.youtube.com/watch?v=smyojy0v_1U
         'How to to display datagridview checked row to another datagridview [withcode]
 
-        'SQLCODE
+        'SQLCODE()
         'ALTER TABLE AttributeSize ADD
         'SizeSequence int NOT NULL CONSTRAINT DF_SizeSequence_AttributeSize DEFAULT '1'
         'ALTER TABLE AttributeSize
@@ -97,7 +131,7 @@ Public Class Selector
             'Next
 
             For Each dr In Me.dgvFullList.SelectedRows
-                dgvSelected.Rows.Add(dr.Cells("SizeID").Value, dr.Cells(2).Value, dr.Cells(3).Value)
+                dgvSelected.Rows.Add(dr.Cells(0).Value, dr.Cells(2).Value, dr.Cells(3).Value)
             Next
 
 

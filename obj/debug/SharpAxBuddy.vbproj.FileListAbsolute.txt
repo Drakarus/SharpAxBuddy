@@ -49,3 +49,21 @@ C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\S
 C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.SizeAttributeSet.resources
 C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.vbproj.GenerateResource.Cache
 C:\Users\Len05\Documents\Visual Studio 2012\Projects\V2\SharpAxBuddy\obj\Debug\SharpAxBuddy.Selector.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe.config
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.exe
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.xml
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.pdb
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\bin\Debug\SharpAxBuddy.exe
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\bin\Debug\SharpAxBuddy.pdb
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\bin\Debug\SharpAxBuddy.xml
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.ColourAttributeSet.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.MainForm.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form2.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.Form3.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.LoginForm.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.Resources.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.NewStockVariable.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.Products.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.Selector.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.SizeAttributeSet.resources
+C:\Users\Dan\Documents\GitHub\SharpAxBuddy\obj\Debug\SharpAxBuddy.vbproj.GenerateResource.Cache
