@@ -62,6 +62,5 @@ Public Class ColourAttributeSet
         Finally
             connectionsql.Dispose()
         End Try
-
     End Sub
 End Class

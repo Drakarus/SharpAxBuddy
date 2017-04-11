@@ -24,8 +24,8 @@ Public Class Selector
 
             Dim i = txtSelectType.Text
             'SQL
-            'connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
-            connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
+            connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
+            'connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
             Dim SDA As New SqlDataAdapter
             Dim dbDataSet As New DataTable
             Dim bSource As New BindingSource
@@ -58,8 +58,8 @@ Public Class Selector
         ElseIf txtSelect.Text = 2 Then
             Dim i = txtSelectType.Text
             'SQL
-            'connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
-            connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
+            connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
+            'connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
             Dim SDA As New SqlDataAdapter
             Dim dbDataSet As New DataTable
             Dim bSource As New BindingSource
@@ -115,6 +115,7 @@ Public Class Selector
 
 
         Dim dr As New DataGridViewRow
+        Dim drSelect As New DataGridViewRow
         Dim dt As New DataTable
         Dim bind As New BindingSource
 
@@ -125,17 +126,72 @@ Public Class Selector
 
         'Dim row As DataGridViewRow = dgvSelected.Rows(Of Integer)()
 
-        If dgvSelected.Rows.Count() > 0 Then
-            'For j As Integer = 0 To dgvSelected.Rows.Count() - 1 + 1
-            '    If 
-            'Next
+        Dim checkvalue As New Integer
+        'For checkvalue = 0 To dgvSelected.Rows.Count
+        '    If dgvSelected.Rows(checkvalue).Cells(0).Value = dr.Cells(0).Value Then
 
+
+
+        '    End If
+        'Next
+
+        'For checkvalue = 0 To dgvSelected.Rows.Count
+        '    If dgvSelected.Rows(checkvalue).Cells(0).Value = dr.Cells(0).Value Then
+
+        '    End If
+        'Next
+
+
+
+        'If dgvSelected.Rows.Count() > 0 Then
+
+
+        '    '    For j As Integer = 0 To dgvSelected.Rows.Count() - 1 + 1
+        '    '    If 
+        '    'Next
+        '    '    For checkvalue = 0 To dgvSelected.Rows.Count
+        '    '        If dgvSelected.Rows(checkvalue).Cells(0).Value = dr.Cells(0).Value Then
+
+        '    '            For Each dr In Me.dgvSelected.Rows
+        '    '            Next
+
+        '    '        End If
+        '    '    Next
+
+        '    For Each dr In Me.dgvFullList.SelectedRows
+        '        'Next
+        '        For Each drSelect In Me.dgvSelected.Rows
+        '            If drSelect.Cells(0).Value = dr.Cells(0).Value Then
+
+        '            End If
+        '            dgvSelected.Rows.Add(dr.Cells(0).Value, dr.Cells(2).Value, dr.Cells(3).Value)
+        '        Next
+        '        'dgvSelected.Rows.Add(dr.Cells(0).Value, dr.Cells(2).Value, dr.Cells(3).Value)
+        '    Next
+
+
+        'End If
+
+        '--http://stackoverflow.com/questions/33065041/datagridview-value-already-exist-vb
+        '--http://stackoverflow.com/questions/12307835/checking-for-duplicates-in-datagridview
+        MessageBox.Show(dgvSelected.Rows.Count())
+        If dgvSelected.Rows.Count() > 1 Then
+            For Each dr In Me.dgvFullList.SelectedRows
+                For Each drSelect In Me.dgvSelected.Rows
+                    If drSelect.Cells(0).Value = dr.Cells(0).Value Then
+                        MessageBox.Show("Already Exists")
+                    Else
+                        'drSelect.Cells(0).Value = dr.Cells(0).Value
+                        dgvSelected.Rows.Add(dr.Cells(0).Value, dr.Cells(2).Value, dr.Cells(3).Value)
+                    End If
+                Next
+            Next
+        Else
             For Each dr In Me.dgvFullList.SelectedRows
                 dgvSelected.Rows.Add(dr.Cells(0).Value, dr.Cells(2).Value, dr.Cells(3).Value)
             Next
-
-
         End If
+
 
 
 
@@ -194,5 +250,9 @@ Public Class Selector
         ' Next
         'bind.DataSource = dt
         'dgvSelected.DataSource = bind
+    End Sub
+
+    Private Sub btnSelect_Click(sender As Object, e As EventArgs) Handles btnSelect.Click
+
     End Sub
 End Class

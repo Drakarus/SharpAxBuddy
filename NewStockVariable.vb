@@ -131,8 +131,8 @@ Public Class NewStockVariable
         Dim SizeCode As New List(Of String)
         Dim SizeDesc As New List(Of String)
         'SQL
-        'Dim constr = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
-        Dim constr = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
+        Dim constr = "Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True"
+        'Dim constr = "Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True"
         '-CONNECTION TO SQL--
         Using connection As New SqlConnection(constr)
             connection.Open()
@@ -265,8 +265,8 @@ Public Class NewStockVariable
         Dim command As New SqlCommand
         Dim datareader As SqlDataReader
         '-CONNECTION TO SQL--
-        'connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
-        connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
+        connectionsql = New SqlConnection("Data Source=LEN05-THINK\DANW;Initial Catalog=NORTHWND;Integrated Security=True")
+        'connectionsql = New SqlConnection("Data Source=DAN-PC;Initial Catalog=NORTHWND;Integrated Security=True")
         Try
             connectionsql.Open()
             command.Connection = connectionsql
